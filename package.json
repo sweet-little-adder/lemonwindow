@@ -1,7 +1,7 @@
 {
-  "name": "vite-react",
+  "name": "lemonwindow",
   "private": true,
-  "version": "0.0.0",
+  "version": "1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,5 +28,10 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  }
+  },
+  "description": "website",
+  "main": "index.js",
+  "repository": "git@github.com:sweet-little-adder/lemonwindow.git",
+  "author": "Orion <orioncheetah@gmail.com>",
+  "license": "MIT"
 }
