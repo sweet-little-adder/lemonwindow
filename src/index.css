@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Jaro&display=swap");
+
 :root {
     font-family: American Captain, Inter, system-ui, Avenir, Helvetica, Arial,
         sans-serif;
@@ -46,13 +48,14 @@ button {
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
+    font-family: "Jaro", sans-serif;
+    color: white;
+    background-color: #29d7e2;
     cursor: pointer;
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #646cff;
+    /* border-color: #646cff; */
 }
 button:focus,
 button:focus-visible {
@@ -68,6 +71,6 @@ button:focus-visible {
         color: #747bff;
     }
     button {
-        background-color: #f9f9f9;
+        background-color: #29d7e2;
     }
 }

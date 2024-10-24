@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Bulletto Killa";
+    src: url("/fonts/BullettoKilla.woff2") format("woff2"),
+        url("/fonts/BullettoKilla.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Streetwear";
+    src: url("https://path-to-your-font/Streetwear.woff2") format("woff2"),
+        url("https://path-to-your-font/Streetwear.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 #root {
     max-width: 1280px;
     margin: 0 auto;

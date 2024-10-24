@@ -3,17 +3,15 @@ import "./App.css";
 import Header from "./components/Header";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <div className="w-screen justify-center items-center">
+        <div className="w-full justify-center items-center">
             <Header />
             <div className=""></div>
 
-            <h1>Lemon Window</h1>
+            <h1> #1 Cleaning Agency</h1>
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
-                    GET A QUOTE {count}
+                    GET A QUOTE
                 </button>
             </div>
         </div>

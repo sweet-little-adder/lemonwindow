@@ -7,6 +7,10 @@ export default {
       backgroundImage: {
         'noise': "url('/src/assets/headernoise.png')",
       },
+      fontFamily: {
+        bulletto: ['"Bulletto Killa"', 'cursive'], // Adding the custom font
+        streetwear: ['"Streetwear"', 'cursive'],
+      },
     },
   },
   plugins: [],
