@@ -9,9 +9,7 @@ function App() {
 
             <h1> #1 Cleaning Agency</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    GET A QUOTE
-                </button>
+                <button>GET A QUOTE</button>
             </div>
         </div>
     );
