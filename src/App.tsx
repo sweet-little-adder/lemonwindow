@@ -7,7 +7,6 @@ function App() {
             <Header />
             <div className=""></div>
 
-            <h1> #1 Cleaning Agency</h1>
             <div className="card">
                 <button>GET A QUOTE</button>
             </div>
