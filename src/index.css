@@ -50,7 +50,9 @@ button {
     font-weight: 500;
     font-family: "Jaro", sans-serif;
     color: white;
-    background-color: #29d7e2;
+    /* background-color: #29d7e2; */
+    background-color: #ff00aa;
+
     cursor: pointer;
     transition: border-color 0.25s;
 }
