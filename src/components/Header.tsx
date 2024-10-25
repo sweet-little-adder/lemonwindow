@@ -8,9 +8,9 @@ interface Props {
 
 const Header: React.FC<Props> = ({ quote, setQuote }) => {
     return (
-        <div className="mx-auto bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise md:text-4xl pt-20 ">
+        <div className="mx-auto bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise md:text-3xl pt-9 ">
             <div className="cursor-default select-none">
-                <div className="md:mb-6 pt-7 font-streetwear text-6xl md:text-[128px] text-[#FFE600] drop-shadow! ">
+                <div className="mb-[-1rem] pt-7 font-streetwear text-6xl md:text-[128px] text-[#FFE600] drop-shadow! ">
                     Lemon
                 </div>
                 <p className="tracking-wide">Window Cleaning</p>
