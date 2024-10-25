@@ -66,7 +66,9 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                     </FormGroup>
                 ))}
             </div>
-            <button className="mt-5">Submit</button>
+            <button className="mt-5" onClick={() => setQuote(false)}>
+                Submit
+            </button>
         </div>
     );
 };
