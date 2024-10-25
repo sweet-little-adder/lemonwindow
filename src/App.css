@@ -7,8 +7,7 @@
 }
 @font-face {
     font-family: "Streetwear";
-    src: url("https://path-to-your-font/Streetwear.woff2") format("woff2"),
-        url("https://path-to-your-font/Streetwear.woff") format("woff");
+    src: url("./assets/Streetwear.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
