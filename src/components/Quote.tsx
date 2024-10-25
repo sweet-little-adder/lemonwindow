@@ -21,10 +21,10 @@ const services = [
 
 const Quote: React.FC<Props> = ({ setQuote }) => {
     return (
-        <div className="bg-[#FFF8EF] border p-5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-96 w-[95%] md:w-1/2 rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]">
+        <div className="bg-[#FFF8EF] bg-noise2 border p-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit  w-[95%] md:w-1/2 rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]">
             <div
                 onClick={() => setQuote(false)}
-                className="pointer-events-auto w-fit absolute right-5 z-10 text-2xl text-[#c9c9c9]/25  cursor-pointer"
+                className="pointer-events-auto w-fit absolute top-5 right-5 z-10 text-2xl text-[#c9c9c9]/25  cursor-pointer"
             >
                 ✕
             </div>
@@ -39,19 +39,19 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                     id="outlined-basic"
                     label="Name"
                     variant="outlined"
+                />{" "}
+                <TextField
+                    id="standard-basic"
+                    label="Phone"
+                    variant="outlined"
                 />
                 <TextField
                     id="filled-basic"
                     label="Zip code"
                     variant="filled"
                 />
-                <TextField
-                    id="standard-basic"
-                    label="Phone"
-                    variant="standard"
-                />
             </Box>
-            <div className="font-sans font-bold mt-6 text-2xl">
+            <div className="font-sans/ font-bold mt-6 text-2xl">
                 {" "}
                 What do you want?
             </div>
@@ -66,6 +66,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                     </FormGroup>
                 ))}
             </div>
+            <button className="mt-5">Submit</button>
         </div>
     );
 };

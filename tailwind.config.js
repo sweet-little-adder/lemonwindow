@@ -6,6 +6,7 @@ export default {
     extend: {
       backgroundImage: {
         'noise': "url('/src/assets/headernoise.png')",
+        'noise2': "url('/src/assets/quotenoise.png')",
       },
       fontFamily: {
         bulletto: ['"Bulletto Killa"', 'cursive'], // Adding the custom font
