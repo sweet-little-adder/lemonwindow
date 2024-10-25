@@ -7,9 +7,7 @@ function App() {
             <Header />
             <div className=""></div>
 
-            <div className="card">
-                <button>GET A QUOTE</button>
-            </div>
+            <div className="card"></div>
         </div>
     );
 }
