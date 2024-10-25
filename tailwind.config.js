@@ -10,6 +10,8 @@ export default {
       fontFamily: {
         bulletto: ['"Bulletto Killa"', 'cursive'], // Adding the custom font
         streetwear: ['"Streetwear"', 'cursive'],
+        'american-captain': ['"American Captain"', 'sans-serif'], // Adjust fallback as needed
+
       },
     },
   },
