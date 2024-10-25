@@ -13,7 +13,7 @@ const Header: React.FC<Props> = ({ quote, setQuote }) => {
                 <div className="mb-6 pt-7 font-streetwear text-[128px] text-[#FFE600] drop-shadow! ">
                     Lemon
                 </div>
-                Window Cleaning
+                <p className="tracking-wide">Window Cleaning</p>
             </div>
             <div className="flex justify-around items-center w-screen text-[36px] mt-12">
                 <div className="cursor-pointer transition-all hover:underline">
