@@ -1,5 +1,12 @@
+import React from "react";
+
 import "../App.css";
-function Header() {
+interface Props {
+    setQuote: React.Dispatch<React.SetStateAction<boolean>>;
+    quote: boolean;
+}
+
+const Header: React.FC<Props> = ({ quote, setQuote }) => {
     return (
         <div className="mx-auto bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise text-4xl pt-20 ">
             <div className="cursor-default select-none">
@@ -19,10 +26,13 @@ function Header() {
                     Locations
                 </div>
             </div>
-            <button className="text-[48px] mt-8 transition-all hover:drop-shadow-[0_6px_10px_rgba(41,215,226,0.25)]">
+            <button
+                onClick={() => setQuote(!quote)}
+                className=" md:text-[48px] mt-8 transition-all hover:drop-shadow-[0_6px_10px_rgba(41,215,226,0.25)]"
+            >
                 GET A QUOTE
             </button>
         </div>
     );
-}
+};
 export default Header;
