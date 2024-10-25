@@ -1,16 +1,16 @@
-/* @font-face {
+@font-face {
     font-family: "Bulletto Killa";
     src: url("/fonts/BullettoKilla.woff2") format("woff2"),
         url("/fonts/BullettoKilla.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-} */
-/* @font-face {
+}
+@font-face {
     font-family: "Streetwear";
     src: url("./assets/Streetwear.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 #root {
     /* max-width: 1280px; */
