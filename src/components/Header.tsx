@@ -2,7 +2,7 @@ import "../App.css";
 function Header() {
     return (
         <div className="mx-auto bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise text-4xl pt-20 ">
-            <div>
+            <div className="cursor-default select-none">
                 <div className="mb-6 pt-7 font-streetwear text-[128px] text-[#FFE600] drop-shadow! ">
                     Lemon
                 </div>
