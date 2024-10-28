@@ -64,7 +64,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                 ✕
             </div>
             {submit ? (
-                <div className="bg-noise3 flex justify-start items-center font-streetwear border-[12px]  border-[#ffcccc] bg-center bg-cover bg-repeat-x w-full h-96 p-[-5px]">
+                <div className="bg-noise3 flex justify-center items-center font-streetwear border-[12px]  border-[#ffcccc] bg-center bg-cover bg-repeat-x w-full h-96 p-[-5px]">
                     <div className="relative z-20 flex-col">
                         <p className="text-2xl">Thank you! </p>
                         <br />
