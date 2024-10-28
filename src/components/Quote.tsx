@@ -54,7 +54,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="bg-[#FFF8EF] bg-noise2 border p-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit  w-[95%] md:w-1/2 rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]"
+            className="bg-[#FFF8EF] bg-noise2 border p-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit  w-[95%] md:w-fit  rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]"
         >
             {" "}
             <div
@@ -64,11 +64,12 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                 ✕
             </div>
             {submit ? (
-                <div className="bg-noise3 flex justify-center items-center font-streetwear border-[12px]  border-[#ffcccc] bg-center bg-cover bg-repeat-x w-full h-96 p-[-5px]">
+                <div className="bg-noise3 flex justify-center items-center font-streetwear border-[12px]  border-[#ffcccc] bg-center bg-cover bg-repeat-x md:w-96 h-96 p-[-5px]">
                     <div className="relative z-20 flex-col">
                         <p className="text-2xl">Thank you! </p>
                         <br />
-                        Your quote has been submited. Here's a lemon
+                        Your quote has been submited. <br />
+                        Here's a lemon
                     </div>
                     <div className="absolute z-0 inset-0 bg-[#FFF8EF] opacity-40"></div>
                 </div>
