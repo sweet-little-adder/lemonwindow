@@ -64,14 +64,14 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                 ✕
             </div>
             {submit ? (
-                <div className="bg-noise3 flex justify-center items-center font-streetwear border-[12px]  border-[#ffcccc] bg-center bg-cover bg-repeat-x md:w-96 h-96 p-[-5px]">
+                <div className="bg-noise3 flex justify-center items-center font-streetwear border-[12px]  border-[#ff9c9c] bg-center bg-cover bg-repeat-x md:w-96 h-96 p-[-5px]">
                     <div className="relative z-20 flex-col">
                         <p className="text-2xl">Thank you! </p>
                         <br />
                         Your quote has been submited. <br />
                         Here's a lemon
                     </div>
-                    <div className="absolute z-0 inset-0 bg-[#FFF8EF] opacity-40"></div>
+                    <div className="absolute z-0 inset-0 bg-[#FFF8EF] opacity-60"></div>
                 </div>
             ) : (
                 <>
