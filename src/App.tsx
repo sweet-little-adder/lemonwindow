@@ -6,7 +6,7 @@ import Quote from "./components/Quote";
 function App() {
     const [quote, setQuote] = useState<boolean>(false);
     return (
-        <div className="w-full h-full flex-col justify-center">
+        <div className="w-full h-full flex-col justify-center items-start">
             <div className="items-start sticky top-0">
                 <Header setQuote={setQuote} quote={quote} />
             </div>
