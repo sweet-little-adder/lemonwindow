@@ -32,7 +32,7 @@ const Header: React.FC<Props> = ({ quote, setQuote }) => {
             </div>
             <button
                 onClick={() => setQuote(!quote)}
-                className="text-2xl md:text-[48px] mt-8 transition-all hover:drop-shadow-[0_0px_10px_rgba(255,156,156,0.5)]"
+                className="text-2xl md:text-3xl mt-8 transition-all hover:drop-shadow-[0_0px_10px_rgba(255,156,156,0.5)]"
             >
                 GET A QUOTE
             </button>
