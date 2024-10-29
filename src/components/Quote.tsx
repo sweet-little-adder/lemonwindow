@@ -168,9 +168,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                     <button
                         type="submit"
                         className="mt-5"
-                        onClick={() => {
-                            handleSubmit();
-                        }}
+                        // onClick={handleSubmit}
                     >
                         Submit
                     </button>
