@@ -58,26 +58,33 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("XOXO handleSubmit e", e);
+        setSubmit(true);
+
+        console.log("XOXO handleSubmit", "e", e, "formData", formData);
 
         try {
-            //Send data to the backend
-            const response = await axios.post(
-                "http://your-backend-url/api/submit",
-                formData
-            );
-            console.log("Response:", response.data);
+            console.log("XOXO Send data to the backend:", e);
+
+            // const response = await axios.post(
+            //     "http://your-backend-url/api/submit",
+            //     formData
+            // );
+            // console.log("Response:", response.data);
+            console.log("XOXO Send data to emailjs:", e);
+
             const result = await emailjs.send(
                 "service_6esc1sd", // Service ID
-                "template_r9n849o", // Template ID
+                "template_4kwt0es", // Template ID
                 {
                     from_name: formData.name,
-                    from_email: formData.email,
+                    reply_to: formData.email,
+                    zip_code: formData.zip,
+                    service: formData.service,
                 },
                 "OYlYCopLHoTo-VBi3" // User ID
             );
 
-            console.log("XXX Email sent successfully:", e, result);
+            console.log("XOXO Email sent successfully:", e, result);
         } catch (error) {
             console.error("Error submitting form:", error);
         }
@@ -162,8 +169,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         type="submit"
                         className="mt-5"
                         onClick={() => {
-                            setSubmit(true);
-                            // handleSubmit();
+                            handleSubmit();
                         }}
                     >
                         Submit
