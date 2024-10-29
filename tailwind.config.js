@@ -4,6 +4,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      cursor: {
+        custom: "url('/logo.svg')",
+      },
       backgroundImage: {
         'noise': "url('/src/assets/headernoise.png')",
         'noise2': "url('/src/assets/quotenoise.png')",

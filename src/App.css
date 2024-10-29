@@ -23,7 +23,7 @@
 #root {
     /* max-width: 1280px; */
     /* margin: 0 auto; */
-
+    /* display: flex-column; */
     /* padding: 2rem; */
     text-align: center;
 }

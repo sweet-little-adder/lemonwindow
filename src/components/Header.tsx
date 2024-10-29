@@ -10,8 +10,12 @@ const Header: React.FC<Props> = ({ quote, setQuote }) => {
     return (
         <div className="mx-auto bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise md:text-3xl pt-9 ">
             <div className="cursor-default select-none">
-                <div className="mb-[-1rem] pt-7 font-streetwear text-6xl md:text-[128px] text-[#FFE600] drop-shadow! ">
+                <div className="relative mb-[-1rem] pt-7 w-fit mx-auto font-streetwear text-6xl md:text-[128px] text-[#FFE600] drop-shadow! ">
                     Lemon
+                    {/* <img
+                        src="/logo.svg"
+                        className="absolute top-9 right-20 w-16 md:w-[80px] drop-shadow-[2px_2px_2.5px_rgba(0,0,0,0.3)] filter invert/   brightness-130 sepia/ saturate-100/ hue-rotate-250/  "
+                    /> */}
                 </div>
                 <p className="tracking-wide">Window Cleaning</p>
             </div>
@@ -28,7 +32,7 @@ const Header: React.FC<Props> = ({ quote, setQuote }) => {
             </div>
             <button
                 onClick={() => setQuote(!quote)}
-                className=" md:text-[48px] mt-8 transition-all hover:drop-shadow-[0_0px_10px_rgba(255,156,156,0.5)]"
+                className="text-2xl md:text-[48px] mt-8 transition-all hover:drop-shadow-[0_0px_10px_rgba(255,156,156,0.5)]"
             >
                 GET A QUOTE
             </button>
