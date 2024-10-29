@@ -24,12 +24,14 @@ interface FormData {
     name: string;
     email: string;
     zip: string;
+    service: string[];
 }
 const Quote: React.FC<Props> = ({ setQuote }) => {
     const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
         zip: "",
+        service: [],
     });
     {
         console.log("formData", formData);
@@ -37,37 +39,45 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
     const [submit, setSubmit] = useState<boolean>(false);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const { id, value } = e.target;
-        console.log("XXX etarget:", e.target, "id:", id, "value:", value);
+        const { id, value, checked } = e.target;
 
-        setFormData({
-            ...formData,
-            [id]: value,
-        });
+        if (e.target.type === "checkbox") {
+            setFormData((prevData) => ({
+                ...prevData,
+                service: checked
+                    ? [...prevData.service, value] // Add service if checked
+                    : prevData.service.filter((service) => service !== value), // Remove service if unchecked
+            }));
+        } else {
+            setFormData({
+                ...formData,
+                [id]: value,
+            });
+        }
     };
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("XXX handleSubmit e", e);
+        console.log("XOXO handleSubmit e", e);
 
         try {
-            // Send data to the backend
-            // const response = await axios.post(
-            //     "http://your-backend-url/api/submit",
-            //     formData
-            // );
-            // console.log("Response:", response.data);
-            // const result = await emailjs.send(
-            //     "service_6esc1sd", // Service ID
-            //     "template_r9n849o", // Template ID
-            //     {
-            //         from_name: formData.name,
-            //         from_email: formData.email,
-            //     },
-            //     "OYlYCopLHoTo-VBi3" // User ID
-            // );
+            //Send data to the backend
+            const response = await axios.post(
+                "http://your-backend-url/api/submit",
+                formData
+            );
+            console.log("Response:", response.data);
+            const result = await emailjs.send(
+                "service_6esc1sd", // Service ID
+                "template_r9n849o", // Template ID
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                },
+                "OYlYCopLHoTo-VBi3" // User ID
+            );
 
-            console.log("XXX Email sent successfully:", e);
+            console.log("XXX Email sent successfully:", e, result);
         } catch (error) {
             console.error("Error submitting form:", error);
         }
@@ -105,13 +115,15 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         <TextField
                             id="name"
                             label="Name"
+                            required
                             variant="outlined"
-                            value={formData[0]}
+                            // value={formData[0]}
                             onChange={handleChange}
                         />
                         <TextField
                             id="email"
                             label="Email"
+                            required
                             variant="outlined"
                             // value={formData.email}
                             onChange={handleChange}
@@ -119,6 +131,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         <TextField
                             id="zip"
                             label="Zip code"
+                            required
                             variant="filled"
                             // value={formData.zip}
                             onChange={handleChange}
@@ -131,8 +144,16 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         {services.map((service, index) => (
                             <FormGroup key={index}>
                                 <FormControlLabel
-                                    control={<Checkbox />}
+                                    control={
+                                        <Checkbox
+                                            // checked={true}
+                                            onChange={handleChange}
+                                            id="service"
+                                            value={service}
+                                        />
+                                    }
                                     label={service}
+                                    id="service"
                                 />
                             </FormGroup>
                         ))}
@@ -142,7 +163,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         className="mt-5"
                         onClick={() => {
                             setSubmit(true);
-                            handleSubmit();
+                            // handleSubmit();
                         }}
                     >
                         Submit
