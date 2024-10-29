@@ -19,7 +19,7 @@ const Header: React.FC<Props> = ({ quote, setQuote }) => {
                 </div>
                 <p className="tracking-wide">Window Cleaning</p>
             </div>
-            <div className="flex justify-around items-center w-screen text-[36px] mt-12">
+            <div className="md:flex justify-around items-center w-screen text-4xl space-y-2 md:space-y-0 md:text-[36px] mt-12">
                 <div className="cursor-pointer transition-all hover:underline">
                     Service
                 </div>
