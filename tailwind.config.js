@@ -4,6 +4,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      textStrokeWidth: {
+        sm: '1px',
+        md: '2px',
+        lg: '3px',
+      },
       cursor: {
         custom: "url('/logo.svg')",
       },
@@ -16,10 +21,20 @@ export default {
         bulletto: ['"Bulletto Killa"', 'cursive'], // Adding the custom font
         streetwear: ['"Streetwear"', 'cursive'],
         'american-captain': ['"American Captain"', 'sans-serif'], // Adjust fallback as needed
+        lemonada: ['Lemonada', 'sans-serif'],
 
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-stroke': {
+          '-webkit-text-stroke': '1px black',
+          color: 'transparent',
+        },
+      });
+    },
+  ],
 }
 
