@@ -43,7 +43,7 @@ function App() {
                 )}
             </div>
             {/* footer */}
-            <div className="flex mx-auto font-sans text-xs  left-1/2/ -translate-x-1/2/ absolute bottom-0  w-screen h-fit justify-center items-end pb-5">
+            <div className="flex mx-auto font-sans text-xs  left-1/2/ -translate-x-1/2/  bottom-0  w-screen h-fit justify-center items-end pb-5">
                 Copyright © 2024 Lemon Windows - All Rights Reserved.
             </div>
         </div>
