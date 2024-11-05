@@ -12,9 +12,9 @@ function App() {
             <Header setQuote={setQuote} setPage={setPage} quote={quote} />
 
             {quote && <Quote setQuote={setQuote} />}
-            <div className="z-10 mt-12 mx-auto w-full h-full flex justify-center">
+            <div className="z-10 mt-24 mx-auto w-full h-full flex justify-center text-4xl">
                 {page === "services" && (
-                    <div className="flex gap-12 text-xl ">
+                    <div className="flex gap-12 text-/xl ">
                         <div className="space-y-6">
                             <u>Exterior</u>
                             <br />
@@ -33,7 +33,7 @@ function App() {
                 )}
                 {page === "about us" && <AboutUs />}
                 {page === "locations" && (
-                    <div className="flex-col space-y-6 font-sans/ /text-[#ff0069] text-xl">
+                    <div className="flex-col space-y-6 font-sans/ /text-[#ff0069] text-/xl">
                         <u>Service areas</u>
                         <br />
                         <p>- Northern Virginia -</p>
@@ -43,7 +43,7 @@ function App() {
                 )}
             </div>
             {/* footer */}
-            <div className="flex mx-auto font-sans text-xs  left-1/2/ -translate-x-1/2/ absolute bottom-0 sticky   w-screen h-fit justify-center items-end pb-5">
+            <div className="flex mx-auto font-sans text-xs  left-1/2/ -translate-x-1/2/ absolute bottom-0  w-screen h-fit justify-center items-end pb-5">
                 Copyright © 2024 Lemon Windows - All Rights Reserved.
             </div>
         </div>
