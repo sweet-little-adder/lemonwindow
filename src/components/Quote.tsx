@@ -92,7 +92,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="bg-[#FFF8EF] bg-noise2 border p-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit  w-[95%] md:w-fit  rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]"
+            className="bg-[#FFF8EF] z-20 bg-noise2 border p-9 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit  w-[95%] md:w-fit  rounded-2xl drop-shadow-[0_6px_10px_rgba(0,0,0,0.25)]"
         >
             <div
                 onClick={() => setQuote(false)}
