@@ -12,11 +12,11 @@ const Header: React.FC<Props> = ({ quote, setQuote, setPage }) => {
         <div className="mx-auto z-50 bg-[#FFF9EC]/80 w-screen h-[380px] bg-noise md:text-3xl pt-9 ">
             <div className="cursor-default select-none">
                 <div className="relative mb-[-1rem] pt-7 w-fit mx-auto font-streetwear text-5xl md:text-[128px] text-[#FFE600] drop-shadow! ">
-                    Lemon
                     <img
                         src="/logo_sparkle.png"
-                        className="absolute top-0 right-[-9rem] w-20 md:w-[120px] drop-shadow-[2px_2px_2.5px_rgba(0,0,0,0.2)] filter invert/   brightness-130 sepia/ saturate-100/ hue-rotate-250/  "
-                    />
+                        className="absolute top-0 right-[-4rem] md:right-[-9rem] w-16 md:w-[150px] drop-shadow-[2px_2px_2.5px_rgba(0,0,0,0.2)] filter invert/   brightness-130 sepia/ saturate-100/ hue-rotate-250/  "
+                    />{" "}
+                    Lemon
                 </div>
                 <p className="tracking-wider">Window Cleaning</p>
             </div>

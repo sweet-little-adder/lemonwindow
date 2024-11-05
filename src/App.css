@@ -68,6 +68,23 @@
     opacity: 0.7; /* Slightly transparent for a softer stroke */
 }
 
+.sun-ray {
+    width: 1000px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic(from 0deg, #ff0069 15%, transparent 30%, #ff00ff 45%);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);

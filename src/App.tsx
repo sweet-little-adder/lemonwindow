@@ -2,10 +2,11 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Quote from "./components/Quote";
+import AboutUs from "./components/AboutUs";
 
 function App() {
     const [quote, setQuote] = useState<boolean>(false);
-    const [page, setPage] = useState<string>("about");
+    const [page, setPage] = useState<string>("about us");
     return (
         <div className="w-full h-full flex-col justify-center items-start">
             <Header setQuote={setQuote} setPage={setPage} quote={quote} />
@@ -19,21 +20,7 @@ function App() {
                         grout
                     </div>
                 )}
-                {page === "about us" && (
-                    <div className="relative mt-9 mx-auto flex justify-center">
-                        <div
-                            className="absolute z-10 space-y-12 font-bold text-[#ffefee]/ text-white /text-[#999999] text-4xl text-center font-lemonada text-stroke/   
-                        drop-shadow-[3.5px_2px_0px_rgba(200,299,299,1)] drop-shadow-md"
-                        >
-                            <p className="flex items-center justify-center text-5xl mb-[-20px]">
-                                #<h1>1</h1>
-                            </p>
-                            Cleaning
-                            <br /> Agency
-                        </div>
-                        <div className="z-0 absolute w-[260px] h-[260px] bg-[#ffffcc]/25 rounded-full border-[#ffcccc]/50 border-[40px]"></div>
-                    </div>
-                )}
+                {page === "about us" && <AboutUs />}
                 {page === "locations" && (
                     <div className="flex text-[#ff0069]">DMV area DC</div>
                 )}
