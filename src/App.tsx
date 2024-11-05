@@ -8,11 +8,11 @@ function App() {
     const [quote, setQuote] = useState<boolean>(false);
     const [page, setPage] = useState<string>("about us");
     return (
-        <div className="w-full h-full flex-col justify-center items-start">
+        <div className="w-full h-screen flex-col justify-center items-start">
             <Header setQuote={setQuote} setPage={setPage} quote={quote} />
 
             {quote && <Quote setQuote={setQuote} />}
-            <div className="z-10 mt-12 mx-auto w-full h-screen flex justify-center">
+            <div className="z-10 mt-12 mx-auto w-full h-full flex justify-center">
                 {page === "services" && (
                     <div className="flex gap-12 text-xl ">
                         <div className="space-y-6">
@@ -42,7 +42,8 @@ function App() {
                     </div>
                 )}
             </div>
-            <div className="z-[-1] font-sans text-xs absolute left-1/2 -translate-x-1/2 bottom-0  flex h-full justify-center items-end pb-5">
+            {/* footer */}
+            <div className="flex mx-auto font-sans text-xs  left-1/2/ -translate-x-1/2/ absolute bottom-0 sticky   w-screen h-fit justify-center items-end pb-5">
                 Copyright © 2024 Lemon Windows - All Rights Reserved.
             </div>
         </div>
