@@ -14,8 +14,8 @@ const Header: React.FC<Props> = ({ quote, setQuote, setPage }) => {
                 <div className="relative mb-[-1rem] pt-7 w-fit mx-auto font-streetwear text-5xl md:text-[128px] text-[#FFE600] drop-shadow! ">
                     <img
                         src="/logo_sparkle.png"
-                        className="absolute top-0 right-[-4rem] md:right-[-9rem] w-16 md:w-[150px] drop-shadow-[2px_2px_2.5px_rgba(0,0,0,0.2)] filter invert/   brightness-130 sepia/ saturate-100/ hue-rotate-250/  "
-                    />{" "}
+                        className="absolute top-[4.5rem] right-1/2 translate-x-1/2 md:top-1 md:right-[-4rem] w-16 md:w-[150px] drop-shadow-[2px_2px_2.5px_rgba(0,0,0,0.2)] filter invert/   brightness-130 sepia/ saturate-100/ hue-rotate-250/  "
+                    />
                     Lemon
                 </div>
                 <p className="tracking-wider">Window Cleaning</p>
