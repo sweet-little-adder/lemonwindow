@@ -12,9 +12,9 @@ function App() {
             <Header setQuote={setQuote} setPage={setPage} quote={quote} />
 
             {quote && <Quote setQuote={setQuote} />}
-            <div className="z-10 mt-24 mx-auto w-full h-full flex justify-center text-4xl">
+            <div className="z-10 mt-24 mx-auto  w-full h-full flex justify-center text-4xl">
                 {page === "services" && (
-                    <div className="flex gap-12 text-/xl ">
+                    <div className="flex flex-wrap md:gap-9 mx-auto/ justify-center md:space-y-0 space-y-20 h-fit">
                         <div className="space-y-6">
                             <u>Exterior</u>
                             <br />
