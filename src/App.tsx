@@ -14,7 +14,7 @@ function App() {
             {quote && <Quote setQuote={setQuote} />}
             <div className="z-10 mt-24 mx-auto  w-full h-full flex justify-center text-4xl">
                 {page === "services" && (
-                    <div className="flex flex-wrap md:gap-9 mx-auto/ justify-center md:space-y-0 space-y-20 h-fit">
+                    <div className="flex flex-wrap sm:gap-9 mx-auto/ justify-center sm:space-y-0 space-y-20 h-fit">
                         <div className="space-y-6">
                             <u>Exterior</u>
                             <br />

@@ -6,7 +6,7 @@ export default {
     extend: {
       textStrokeWidth: {
         sm: '1px',
-        md: '2px',
+        sm: '2px',
         lg: '3px',
       },
       cursor: {
