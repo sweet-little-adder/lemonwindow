@@ -3,7 +3,7 @@ function AboutUs() {
         <div className="flex-col h-fit w-screen">
             <div className="relative mt-9 mx-auto flex justify-center h-fit w-fit">
                 <div
-                    className="absolute z-10 space-y-12 font-bold text-[#ffefee]/ text-[#898989] text-white/ text-[#ee8888]/ text-6xl text-center font-lemonada text-stroke/   
+                    className="absolute z-10 space-y-12 font-bold text-[#ffefee]/ text-[#666] text-white/ text-[#ee8888]/ text-6xl text-center font-lemonada text-stroke/   
                         drop-shadow-[3.5px_2px_0px_rgba(200,299,299,1)] drop-shadow-md"
                 >
                     <p className="flex items-center justify-center text-5xl mb-[-20px]">
@@ -16,9 +16,9 @@ function AboutUs() {
             outline-[#ff0069] p-6 w-0 h-0 bg-[#ff0069]" */}
                 {/* <div className="absolute top-0 sun-ray w-screen rounded-full h-screen"></div> */}
 
-                <div className="z-0 absolute w-[260px] h-[260px] bg-[#ffffcc]/20 rounded-full border-[#ffcccc]/90 border-[40px]">
+                <div className="z-0 absolute w-[260px] h-[260px] bg-[#ffffcc]/20 rounded-full border-[#ffc9c9] border-[40px]">
                     {" "}
-                    <div className="z-0 absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-1/2 w-[60px] h-[60px] bg-[#ffcccc]/90 rounded-full /border-[#ffcccc]/90 /border-[40px]"></div>
+                    <div className="z-0 absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-1/2 w-[60px] h-[60px] bg-[#ffc9c9] rounded-full /border-[#ffcccc]/90 /border-[40px]"></div>
                 </div>
             </div>{" "}
             <div className="w-2/3 mx-auto mt-[350px] mb-9 text-[#898989] tracking-wider h-fit">
