@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({ quote, setQuote, setPage }) => {
                     />
                     Lemon
                 </div>
-                <p className="tracking-wider">Window Cleaning</p>
+                <p className="tracking-widest">Window Cleaning</p>
             </div>
             <div className="sm:flex justify-around items-center w-2/3 mx-auto text-4xl space-y-2 sm:space-y-0 sm:text-[36px] mt-12">
                 <div

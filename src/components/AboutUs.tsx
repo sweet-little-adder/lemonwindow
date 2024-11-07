@@ -13,7 +13,7 @@ function AboutUs() {
                     <br /> Agency
                 </div>
                 {/* rounded-full outline-[500px] custom-dashed-border/ outline-dashed
-            outline-[#ff0069] p-6 w-0 h-0 bg-[#ff0069]" */}
+              outline-[#ff0069] p-6 w-0 h-0 bg-[#ff0069]" */}
                 {/* <div className="absolute top-0 sun-ray w-screen rounded-full h-screen"></div> */}
 
                 <div className="z-0 absolute w-[260px] h-[260px] bg-[#ffffcc]/20 rounded-full border-[#ffc9c9] border-[40px]">
@@ -21,22 +21,25 @@ function AboutUs() {
                     <div className="z-0 absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-1/2 w-[60px] h-[60px] bg-[#ffc9c9] rounded-full /border-[#ffcccc]/90 /border-[40px]"></div>
                 </div>
             </div>{" "}
-            <div className="w-2/3 mx-auto mt-[350px] mb-9 text-[#898989] tracking-wider h-fit">
-                <p className="flex ">
-                    At Lemon Windows, we know your time is valuable—that’s why
-                    we specialize in delivering fast, efficient, and
+            <div className="w-2/3 mx-auto text-center mt-[350px] mb-9 text-[#898989] tracking-wider h-fit">
+                <p className="flex justify-center text-center ">
+                    At Lemon Windows, we know your time is valuable — <br />
+                    <br />
+                    that’s why we specialize in delivering fast, efficient, and
                     high-quality cleaning services. From gleaming windows to
                     spotless floors, our team’s dedication to excellence is
-                    matched only by our commitment to speed. Our advanced
-                    cleaning techniques and experienced team mean you get
-                    impeccable results without the wait.{" "}
+                    matched only by our commitment to quality.
+                    {/* Our advanced cleaning techniques and experienced
+                    team mean you get impeccable results without the wait. */}
                 </p>
                 <br />
                 <p>
                     Whether it’s a routine service or a last-minute call, Lemon
                     Windows provides an experience that’s both efficient and
                     meticulous. Our customers trust us to leave their spaces
-                    fresh, bright, and inviting, all in a fraction of the time.
+                    fresh, bright, and inviting, all in a fraction of time.{" "}
+                    <br />
+                    <br />
                     When you want a cleaning service that respects your schedule
                     as much as your home or office, choose Lemon Windows—
                     <br />
