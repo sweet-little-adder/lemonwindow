@@ -24,26 +24,26 @@ function App() {
                             <div className="space-y-6  ">
                                 <u>Exterior</u>
                                 <br />
-                                <p className="hover:text-[#aaecec] drop-shadow-md/   hover:text-stroke">
+                                <p className="hover:text-[#aaecec] drop-shadow-md/   hover:text-stroke/">
                                     window cleaning
                                 </p>
-                                <p className="hover:text-[#ffdc55]  hover:text-stroke">
+                                <p className="hover:text-[#ffdc55]  hover:text-stroke/">
                                     house wash
                                 </p>
-                                <p className="hover:text-[#ffc9c9]  hover:text-stroke">
+                                <p className="hover:text-[#ffc9c9]  hover:text-stroke/">
                                     roof wash
                                 </p>
-                                <p className="hover:text-[#ccdc55]  hover:text-stroke">
+                                <p className="hover:text-[#ccdc55]  hover:text-stroke/">
                                     guttercleaning
                                 </p>
                             </div>
                             <div className="space-y-6">
                                 <u>Interior</u>
                                 <br />
-                                <p className="hover:text-[#ffdc55]  hover:text-stroke">
+                                <p className="hover:text-[#ffdc55]  hover:text-stroke/">
                                     carpet cleaning
                                 </p>
-                                <p className="hover:text-[#ffc9c9]  hover:text-stroke">
+                                <p className="hover:text-[#ffc9c9]  hover:text-stroke/">
                                     tile and grout
                                 </p>
                             </div>
@@ -55,13 +55,13 @@ function App() {
                     <div className="flex-col space-y-6 font-sans/ /text-[#ff0069] text-/xl tracking-wide">
                         <u>Service areas</u>
                         <br />
-                        <p className="hover:text-[#ccecec]/ hover:text-stroke">
+                        <p className="hover:text-[#ccecec] hover:text-stroke/">
                             - Northern Virginia -
                         </p>
-                        <p className="hover:text-[#ffe404] hover:text-stroke">
+                        <p className="hover:text-[#ffe404] hover:text-stroke/">
                             - Maryland -
                         </p>
-                        <p className="hover:text-[#ffc9c9] hover:text-stroke">
+                        <p className="hover:text-[#ffc9c9] hover:text-stroke/">
                             - Washington DC -
                         </p>
                     </div>
