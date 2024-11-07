@@ -129,7 +129,7 @@ const Quote: React.FC<Props> = ({ setQuote }) => {
                         />
                         <TextField
                             id="email"
-                            label="Email"
+                            label="Phone"
                             required
                             variant="outlined"
                             // value={formData.email}
