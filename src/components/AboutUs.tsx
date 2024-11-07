@@ -1,6 +1,6 @@
 function AboutUs() {
     return (
-        <div className="flex-col h-screen w-screen">
+        <div className="flex-col h-full w-screen">
             <div className="relative mt-9 mx-auto flex justify-center h-fit w-fit">
                 <div
                     className="absolute z-10 space-y-12 font-bold text-[#ffefee]/ text-[#898989] text-white/ text-[#ee8888]/ text-6xl text-center font-lemonada text-stroke/   
@@ -21,7 +21,7 @@ function AboutUs() {
                     <div className="z-0 absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-1/2 w-[60px] h-[60px] bg-[#ffcccc]/90 rounded-full /border-[#ffcccc]/90 /border-[40px]"></div>
                 </div>
             </div>{" "}
-            <div className="w-2/3 mx-auto mt-[350px]  text-[#898989] tracking-wider">
+            <div className="w-2/3 mx-auto mt-[350px] mb-9 text-[#898989] tracking-wider h-full">
                 <p className="flex ">
                     At Lemon Windows, we know your time is valuable—that’s why
                     we specialize in delivering fast, efficient, and
