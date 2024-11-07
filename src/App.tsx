@@ -21,19 +21,31 @@ function App() {
                         <br />
                         <br />
                         <div className="flex flex-wrap sm:gap-9 mx-auto/ justify-center sm:space-y-0 space-y-20 h-fit">
-                            <div className="space-y-6">
+                            <div className="space-y-6 transition-all ">
                                 <u>Exterior</u>
                                 <br />
-                                <p>window cleaning</p>
-                                <p>house wash</p>
-                                <p>roof wash</p>
-                                <p>guttercleaning</p>
+                                <p className="hover:text-[#aaecec] transition-all ">
+                                    window cleaning
+                                </p>
+                                <p className="hover:text-[#ffdc55] transition-all ">
+                                    house wash
+                                </p>
+                                <p className="hover:text-[#ffc9c9] transition-all ">
+                                    roof wash
+                                </p>
+                                <p className="hover:text-[#ccec55] transition-all ">
+                                    guttercleaning
+                                </p>
                             </div>
                             <div className="space-y-6">
                                 <u>Interior</u>
                                 <br />
-                                <p>carpet cleaning</p>
-                                <p>tile and grout</p>
+                                <p className="hover:text-[#ffdc55] transition-all ">
+                                    carpet cleaning
+                                </p>
+                                <p className="hover:text-[#ffc9c9] transition-all ">
+                                    tile and grout
+                                </p>
                             </div>
                         </div>
                     </div>
