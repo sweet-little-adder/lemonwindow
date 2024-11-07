@@ -69,11 +69,37 @@
 }
 
 .sun-ray {
-    width: 1000px;
-    height: 100px;
-    border-radius: 50%;
-    background: conic(from 0deg, #ff0069 15%, transparent 30%, #ff00ff 45%);
-    animation: rotate 5s linear infinite;
+    background: linear-gradient(80deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(90deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(82deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(67deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(52deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(37deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(22deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(7deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(-8deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(-23deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(-38deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(-53deg, transparent 50%, #ddd 50%, #ddd),
+        linear-gradient(-68deg, transparent 50%, #eee 50%, #eee),
+        linear-gradient(-83deg, transparent 50%, #ddd 50%, #ddd);
+    background-position: center 100%;
+    background-color: #eee;
+    background-size: 100% 200%;
+    min-height: 100%;
+}
+.custom-dashed-border {
+    border-width: 4px;
+    border-style: dashed;
+    border-color: transparent;
+    border-image: repeating-linear-gradient(
+            90deg,
+            blue 0,
+            blue 10px,
+            transparent 10px,
+            transparent 20px
+        )
+        1;
 }
 
 @keyframes rotate {
