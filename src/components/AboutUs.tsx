@@ -6,9 +6,9 @@ function AboutUs() {
                     className="absolute z-10 space-y-12 font-bold text-[#ffefee]/ text-[#666] text-white/ text-[#ee8888]/ text-6xl text-center font-lemonada text-stroke/   
                         drop-shadow-[3.5px_2px_0px_rgba(200,299,299,1)] drop-shadow-md"
                 >
-                    <p className="flex items-center justify-center text-5xl mb-[-20px]">
+                    <span className="flex items-center justify-center text-5xl mb-[-20px]">
                         #<h1>1</h1>
-                    </p>
+                    </span>
                     Cleaning
                     <br /> Agency
                 </div>
@@ -23,7 +23,8 @@ function AboutUs() {
             </div>{" "}
             <div className="w-2/3 mx-auto text-center mt-[350px] mb-9 text-[#898989] tracking-wider h-fit">
                 <p className="flex justify-center text-center ">
-                    At Lemon Windows, we know your time is valuable — <br />
+                    At Lemon Windows, we know your time is valuable <br /> —{" "}
+                    <br />
                     <br />
                     that’s why we specialize in delivering fast, efficient, and
                     high-quality cleaning services. From gleaming windows to
