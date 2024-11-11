@@ -23,15 +23,15 @@ function AboutUs() {
             </div>{" "}
             <div className="w-2/3 mx-auto text-center mt-[350px] mb-9 text-[#898989] tracking-wider h-fit">
                 <p className="flex justify-center text-center ">
-                    At Lemon Windows, we know your time is valuable <br /> —{" "}
-                    <br />
+                    At Lemon Windows, we know your time is valuable <br />
+                    <br /> ∼<br />
                     <br />
                     that’s why we specialize in delivering fast, efficient, and
                     high-quality cleaning services. From gleaming windows to
                     spotless floors, our team’s dedication to excellence is
                     matched only by our commitment to quality.
                     {/* Our advanced cleaning techniques and experienced
-                    team mean you get impeccable results without the wait. */}
+                    team mean you get impeccable results without the wait.— */}
                 </p>
                 <br />
                 <p>
@@ -42,7 +42,10 @@ function AboutUs() {
                     <br />
                     <br />
                     When you want a cleaning service that respects your schedule
-                    as much as your home or office, choose Lemon Windows—
+                    as much as your home or office, choose Lemon Windows
+                    <br />
+                    <br />
+                    ∼
                     <br />
                     <br />
                     <p className="text-5xl text-[#555555] sm:w-2/3 border border-[1rem] border-[#ffc9c9] p-5 mx-auto flex-wrap font-bold">
